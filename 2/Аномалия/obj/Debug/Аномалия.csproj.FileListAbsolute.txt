@@ -1,0 +1,10 @@
+C:\Users\опт\Desktop\Stalker\2\Аномалия\bin\Debug\Аномалия.exe.config
+C:\Users\опт\Desktop\Stalker\2\Аномалия\bin\Debug\Аномалия.exe
+C:\Users\опт\Desktop\Stalker\2\Аномалия\bin\Debug\Аномалия.pdb
+C:\Users\опт\Desktop\Stalker\2\Аномалия\obj\Debug\Аномалия.csprojAssemblyReference.cache
+C:\Users\опт\Desktop\Stalker\2\Аномалия\obj\Debug\Аномалия.Form1.resources
+C:\Users\опт\Desktop\Stalker\2\Аномалия\obj\Debug\Аномалия.Properties.Resources.resources
+C:\Users\опт\Desktop\Stalker\2\Аномалия\obj\Debug\Аномалия.csproj.GenerateResource.cache
+C:\Users\опт\Desktop\Stalker\2\Аномалия\obj\Debug\Аномалия.csproj.CoreCompileInputs.cache
+C:\Users\опт\Desktop\Stalker\2\Аномалия\obj\Debug\Аномалия.exe
+C:\Users\опт\Desktop\Stalker\2\Аномалия\obj\Debug\Аномалия.pdb
