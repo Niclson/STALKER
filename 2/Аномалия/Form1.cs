@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
+//using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Аномалия
@@ -58,7 +58,7 @@ namespace Аномалия
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if ((con1 == data1) && (con2 == data2))
+            if ((con1 == data1) && (con2 == data2) && (con3 == data3))
             {
                 label7.Text = "Наиболее верятное появление артефактов";
                 label8.Text = "в аномалии №1";

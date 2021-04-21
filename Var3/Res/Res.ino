@@ -8,10 +8,10 @@ int cycle_step_motor = 1;
 
   
 #define TIME_SECOND (400)      // примерное необходимое время нахождения в аномалии в секундах. время реальное = необходимое время / 1,5.  600/1,5 = 400 - примерно 10 минуты игрока
-#define PWM         (5)     // скважность мотора. подберается в процессе 
-#define RES_AN_1    (123)      //  числовой результат аномалии 1. Число от 0 до 255 
-#define RES_AN_2    (231)      //  числовой результат аномалии 2. Число от 0 до 255
-#define RES_AN_3    (31)      //  числовой результат аномалии 3. Число от 0 до 255
+#define PWM         (5)        // скважность мотора. подберается в процессе 
+#define RES_AN_1    (192)      //  числовой результат аномалии 1. Число от 0 до 255 
+#define RES_AN_2    (134)      //  числовой результат аномалии 2. Число от 0 до 255
+#define RES_AN_3    (251)      //  числовой результат аномалии 3. Число от 0 до 255
 
 
 
@@ -203,9 +203,9 @@ void loop()
     
 
     // Обработчик галетника
-    if(!(PINB&(1<<1)))  { galetnik_status = 1; analogWrite(3, PWM);}
-    if(!(PINB&(1<<3)))  { galetnik_status = 3; analogWrite(3, PWM);}
-    if(!(PINB&(1<<4)))  { galetnik_status = 4; analogWrite(3, PWM);}
+    if(!(PINB&(1<<1)))  { galetnik_status = 2; analogWrite(3, PWM);}
+    if(!(PINB&(1<<3)))  { galetnik_status = 1; analogWrite(3, PWM);}
+    if(!(PINB&(1<<4)))  { galetnik_status = 3; analogWrite(3, PWM);}
     
 
 
@@ -251,7 +251,7 @@ void loop()
 
 
         // обработчик аномалии 1
-        if( (received_number == 127) && (galetnik_status == 4) ){
+        if( (received_number == 192) && (galetnik_status == 1) ){
 
            if( flag_counter_time_anamaly_1 == 0)   {flag_enable_step_motor = 1;}
             
@@ -296,7 +296,7 @@ void loop()
             }
 
         }
-        if( (received_number == 127) && (galetnik_status != 4) ){
+        if( (received_number == 192) && (galetnik_status != 1) ){
 
             
             flag_enable_step_motor = 0;
@@ -322,7 +322,7 @@ void loop()
 
 
         // обработчик аномалии 2
-        if( (received_number == 250) && (galetnik_status == 1) ){
+        if( (received_number == 134) && (galetnik_status == 2) ){
 
             if( flag_counter_time_anamaly_2 == 0)   {flag_enable_step_motor = 1;}
             
@@ -364,7 +364,7 @@ void loop()
 
         }
         
-        if( (received_number == 250) && (galetnik_status != 1) ){
+        if( (received_number == 134) && (galetnik_status != 2) ){
 
             flag_enable_step_motor = 0;
             analogWrite(3, 0);
@@ -389,7 +389,7 @@ void loop()
 
 
         // обработчик аномалии 3
-        if( (received_number == 56) && (galetnik_status == 3) ){
+        if( (received_number == 251) && (galetnik_status == 3) ){
 
             if( flag_counter_time_anamaly_3 == 0)   {flag_enable_step_motor = 1;}
             
@@ -430,7 +430,7 @@ void loop()
             }
 
         }
-        if( (received_number == 56) && (galetnik_status != 3) ){
+        if( (received_number == 251) && (galetnik_status != 3) ){
  
             flag_enable_step_motor = 0;
             
