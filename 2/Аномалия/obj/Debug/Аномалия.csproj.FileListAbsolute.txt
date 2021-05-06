@@ -17,3 +17,4 @@ d:\STALKER\2\Аномалия\obj\Debug\Аномалия.csproj.GenerateResource
 d:\STALKER\2\Аномалия\obj\Debug\Аномалия.csproj.CoreCompileInputs.cache
 d:\STALKER\2\Аномалия\obj\Debug\Аномалия.exe
 d:\STALKER\2\Аномалия\obj\Debug\Аномалия.pdb
+d:\STALKER\2\Аномалия\obj\Debug\Аномалия.csprojAssemblyReference.cache

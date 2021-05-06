@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30709.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Аномалия", "Аномалия.csproj", "{CDC55312-E0A7-49DA-8AE4-5667B9CB7394}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\Setup1\Setup1.vdproj", "{863369E9-ACF5-42EA-B509-91A204128487}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{CDC55312-E0A7-49DA-8AE4-5667B9CB7394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDC55312-E0A7-49DA-8AE4-5667B9CB7394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDC55312-E0A7-49DA-8AE4-5667B9CB7394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863369E9-ACF5-42EA-B509-91A204128487}.Debug|Any CPU.ActiveCfg = Debug
+		{863369E9-ACF5-42EA-B509-91A204128487}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
